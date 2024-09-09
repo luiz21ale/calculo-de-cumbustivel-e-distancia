@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de Consumo de Combustível</title>
+
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/rest.css">
+    <link rel="stylesheet" href="src/css/resposivel.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Outfit&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Nerko+One&family=Outfit&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main class="main">
+
+        <h1 class="title-pincipal" id="transicao">
+            Calcule a <span class="cor-1">Distância</span> e o seu <span class="cor-2">Combustível</span> gasto em sua
+            viagem!!
+        </h1>
+
+        <div class="formulario">
+            <form class="informacoes" id="calc-form">
+                <label for="tempo">Informe o tempo da viagem em horas:</label>
+                <input class="input" type="number" id="tempo" name="tempo" step="0.1" required><br><br>
+
+                <label for="velocidade">Informe a velocidade média em km/h:</label>
+                <input class="input" type="number" id="velocidade" name="velocidade" step="0.1" required><br><br>
+
+
+            </form>
+
+        </div>
+
+        <button class="btn" type="button" onclick="calcularLitrosGastos()">Calcular</button>
+
+        <div class="resultado">
+            <h2 class="title">Resultados:</h2>
+            <p class="p" id="resultado-distancia"></p>
+            <p class="p" id="resultado-litros"></p>
+            <p class="erro" id="mensagem-erro"></p>
+        </div>
+
+        <script src="src/js/index.js"></script>
+    </main>
+</body>
+
+</html>

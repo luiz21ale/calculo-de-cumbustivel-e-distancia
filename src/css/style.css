@@ -1,0 +1,153 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background: no-repeat; */
+    background-image: linear-gradient(red, rgb(44, 44, 168) ) ;
+
+
+    /* background: no-repeat; */
+    height: 100vh;
+}
+
+.main{
+    /* max-width: 1200px; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding:40px;
+    height: 100%;
+}
+
+.title-pincipal{
+    font-family: "EB Garamond", serif;
+    font-weight: bold;
+    color: #f0f0f0;
+    /* padding: 20px; */
+    border-radius: 5px;
+    font-size: 20px;
+    text-align: center;
+    text-shadow: 5px 5px 1px rgba(26, 1, 1, 0.504) ;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.title-pincipal.visible {
+    opacity: 1;
+}
+
+
+.cor-1{
+    color: rgba(59, 206, 37, 0.671);
+}
+
+.cor-2{
+    color: rgb(68, 191, 177);
+}
+
+.cor-1, .cor-2{
+    margin: 0 5px;
+    text-decoration: underline ;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    text-align: center;
+    /* opacity: 0;
+    transition: opacity 1.5s ease-in-out; */
+}
+
+/* .formulario.visible {
+    opacity: 1;
+} */
+
+.informacoes{
+    font-family: "Nerko One", cursive;
+    font-weight: 300;
+    font-size: 18px;
+    color: white;
+    text-shadow: 5px 5px 2px rgba(26, 1, 1, 0.504) ;
+    border-radius: 10px;
+    padding: 30px;
+    transition: 0.5s;
+}
+
+.informacoes:hover{
+    background-image: linear-gradient(rgb(233, 68, 101), rgb(97, 136, 235) );
+    color: rgb(0, 0, 0);
+    text-shadow: none;
+}
+
+.formulario .input{
+    width: 100%;
+    padding: 3px;
+    border: 3px solid #ccc;
+    border-radius: 6px; 
+    transition: border-color 0.3s ease;
+    font-size: 15px;
+}
+
+.input:focus {
+    color: white;
+    border-color: #4094ed; 
+    background-color: rgba(50, 36, 19, 0.548);
+    outline: none; 
+}
+
+.btn{
+    font-family: "Protest Guerrilla", sans-serif;
+    font-size: 15px;
+    padding: 10px 30px;
+    background-color: rgb(92, 10, 71);
+    color: white;
+    border-radius: 20px;
+    border: none;
+    margin: 25px 0;
+    transition: 0.5s;
+}
+
+.btn:hover{
+    background-image: linear-gradient(rgb(233, 68, 101), rgb(97, 136, 235) );
+    color: black;
+}
+
+.resultado{
+    font-family: "Nerko One", cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    /* margin-top: 20px; */
+    gap: 6px;
+    /* font-size: 20px; */
+}
+
+.resultado .title{
+    font-family: none;
+    color: brown;
+    background-color: black;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.resultado .p{
+    font-size: 18px;
+}
+
+.resultado .erro{
+    padding: 10px 30px;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    
+}
