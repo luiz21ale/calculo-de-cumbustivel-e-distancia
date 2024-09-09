@@ -1,6 +1,7 @@
 # PROJETO PESSOAL 🚀
 
 ## PROJETO CRIADO PARA CALCULAR OS LITROS DE COMBUSTÍVEL GASTOS EM UMA VIAGEM!!
+## O CÁLCULO TEM COMO BASE QUE O CARRO FAZ 12KM COM UM LITRO👍
 
 [<img src="./src/image/dektop.png" alt="projeto em tela de desktop">]
 
