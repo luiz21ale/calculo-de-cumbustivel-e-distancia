@@ -2,16 +2,11 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    /* background: no-repeat; */
-    background-image: linear-gradient(red, rgb(44, 44, 168) ) ;
-
-
-    /* background: no-repeat; */
+    background-image: linear-gradient(red, rgb(44, 44, 168) );
     height: 100vh;
 }
 
 .main{
-    /* max-width: 1200px; */
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -24,7 +19,6 @@ body{
     font-family: "EB Garamond", serif;
     font-weight: bold;
     color: #f0f0f0;
-    /* padding: 20px; */
     border-radius: 5px;
     font-size: 20px;
     text-align: center;
@@ -58,13 +52,7 @@ body{
     justify-content: center;
     margin-top: 30px;
     text-align: center;
-    /* opacity: 0;
-    transition: opacity 1.5s ease-in-out; */
 }
-
-/* .formulario.visible {
-    opacity: 1;
-} */
 
 .informacoes{
     font-family: "Nerko One", cursive;
@@ -124,9 +112,7 @@ body{
     flex-direction: column;
     color: white;
     text-align: center;
-    /* margin-top: 20px; */
     gap: 6px;
-    /* font-size: 20px; */
 }
 
 .resultado .title{
